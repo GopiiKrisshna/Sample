@@ -1,0 +1,95 @@
+/* Container Styling */
+.weather-container {
+    width: 100%;
+    height: 100vh;
+    background: url('./weather.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family:'Trebuchet MS', sans-serif;
+    padding: 30px;
+    /* position:fixed; */
+  }
+  @media (max-width: 768px) {
+    .weather-container {
+      height: 160vh; 
+    }
+  }
+  
+  /* Heading */
+  .weather-heading {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 0 #0b3563, 2px 0 #0b3563, 2px 0 #0b3563, 0 2px #0b3563;
+  }
+  
+  /* Input Field */
+  .weather-input {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Button */
+  .weather-button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .weather-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: red;
+    font-size: 14px;
+  }
+  
+  /* Weather Data Grid */
+  .weather-grid {
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Weather Box */
+  .weather-box {
+    width: 180px;
+    height: 180px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .weather-box h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .weather-box img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .weather-box h5 {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #0056b3;
+  }
+  
+  
